@@ -17,6 +17,7 @@ gem 'will_paginate', '~> 3.1'
 gem 'searchkick', '~> 1.2'
 gem 'gon', '~> 6.0', '>= 6.0.1'
 gem 'figaro'
+gem 'byebug', '~> 8.2', '>= 8.2.2'
 
 group :development, :test do
 	gem 'better_errors', '~> 2.1', '>= 2.1.1'
