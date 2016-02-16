@@ -1,0 +1,6 @@
+.row
+	.input-group
+		= form_for dashboard_path, method: :get  do
+		  = text_field_tag(:zip_code, nil, placeholder: 'Zip Code', maxlength: 5, class: 'form-control')
+		  = hidden_field_tag(:user, current_user.id)
+		  = submit_tag 'Add Marker', class: 'btn btn-primary'

@@ -1,0 +1,14 @@
+h3 Create an account
+
+= simple_form_for :user, url: create_sign_up_path do |f|
+	.row
+		.col-md-6 = f.input :first_name, autofocus: true 
+		.col-md-6 = f.input :last_name, autofocus: true 
+	.row: .col-md-12 = f.input :email, autofocus: true 
+	.row
+		.col-md-6 = f.input :password, autocomplete: "off", required: true
+		.col-md-6 = f.input :password_confirmation, label: 'Confirm Password', autocomplete: "off", required: true 
+	.row 
+		.col-md-12 
+			= f.submit "Sign up", class: 'btn btn-primary'
+			= link_to "Already have an account?", new_user_session_path

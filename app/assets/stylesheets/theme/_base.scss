@@ -1,0 +1,90 @@
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+// Alert/Notice Messages
+.notice-alert-messages {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  text-transform: uppercase;
+  .alert, .notice {
+      padding: 2.5rem 0;
+      text-align: center;
+      margin: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: $white;
+      letter-spacing: 1px;
+  }
+  .alert {
+      background: $red;
+  }
+  .notice {
+      background: $dark-blue;
+  }
+}
+
+// Search
+.search-field {
+  position: relative;
+  margin-top: 8px;
+  .btn {
+    -webkit-transition: background 0.2s linear, border-color .2s linear;
+    -moz-transition: background 0.2s linear, border-color .2s linear;
+    transition: background 0.2s linear, border-color .2s linear;
+  }
+  .form-control {
+    display: none;
+    top: 15px;
+    right: 0;
+    width: 240px;
+    box-shadow: none;
+  }
+  &.active {
+    display: inline-flex;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    .form-control {
+      display: inline-flex;
+      display: -webkit-inline-flex;
+      display: -ms-inline-flexbox;
+    }
+    .btn {
+      position: relative;
+      z-index: 2;
+      background: transparent;
+      border-color: transparent;
+      outline: 0;
+    }
+  }
+
+  #q {
+    margin-top: 3px;
+  }
+}
+
+// User Dropdown
+.user-menu {
+  margin-top: 8px;
+  padding-left: 10px;
+
+  .name {
+    padding-right: 5px;
+  }
+}
+
+// Main Title
+.brand {
+  color: $black;
+  position: relative;
+  font-size: 20px;
+  top: 8px;
+  padding-right: 5px;
+
+  a {
+    text-decoration: none;
+    color: $black;
+  }
+}

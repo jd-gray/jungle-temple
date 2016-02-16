@@ -1,0 +1,36 @@
+- if correct_user?
+  = render 'form'
+  br
+
+#map
+
+.row
+  .col-md-12
+    table.table.table-hover
+      colgroup
+        col
+        col
+        col
+        col
+			thead
+        tr
+          th Zip Code
+          th Country
+          th City
+          th State
+          th
+      tbody
+      	- @locations.each do |location|
+      		tr
+      			td = location.zip_code
+      			td = location.country_abbr
+      			td = location.place_name
+      			td = location.state_abbr
+      			td 
+
+    hr
+      .row.text-center
+        = will_paginate @locations
+
+- content_for :google_map do
+  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAP']}&callback=initMap"

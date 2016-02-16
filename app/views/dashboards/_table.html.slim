@@ -1,0 +1,27 @@
+.row
+  .col-md-12
+    table.table.table-hover
+      colgroup
+        col
+        col
+        col
+        col
+			thead
+        tr
+          th First Name
+          th Last Name
+          th Email
+          th Locations Tracked
+          th
+      tbody.rowlink data-link="row"
+      	- @users.each do |user|
+      		tr
+      			td = user.first_name
+      			td = user.last_name
+      			td = user.email
+      			td = user.locations.count
+      			td = link_to '', dashboard_path(user.id)
+
+    hr
+      .row.text-center
+        = will_paginate @users

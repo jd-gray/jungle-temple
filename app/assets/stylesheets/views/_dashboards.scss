@@ -1,0 +1,19 @@
+.dashboards {
+	.input-group {
+		margin: 0 auto;
+	}
+
+	#zip_code {
+		width: 200px;
+		border-radius: 5px;
+    margin-right: 1px;
+	}
+	
+	// Google Map
+	#map {
+	  height: 500px;
+	  width: 100%;
+	  margin: 0 auto;
+	  margin-bottom: 25px;
+	}
+}

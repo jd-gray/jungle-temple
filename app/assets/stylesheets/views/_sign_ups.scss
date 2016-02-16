@@ -1,0 +1,19 @@
+.sign_ups {
+
+	.title {
+		font-size: 45px;
+	}
+	@media only screen and (min-width: 992px) {
+		.title {
+			margin-top: 125px;
+		}
+	}
+
+	.btn-primary {
+		margin-right: 5px;
+	}
+
+	#copy-right {
+		margin-top: 50px;
+	}
+}

@@ -1,0 +1,8 @@
+.text-center
+	p
+	'You searched for:
+	= params[:q]
+	br
+	span = link_to 'Reset', dashboards_path
+
+= render 'table'

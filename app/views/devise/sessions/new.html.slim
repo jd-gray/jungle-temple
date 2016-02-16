@@ -1,0 +1,8 @@
+.row
+  .col-md-8.col-md-offset-2
+    h2.text-center Log in
+    = simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| 
+      = f.input :email, required: true
+      = f.input :password
+      = f.submit "Log in", class: 'btn btn-primary' 
+      = link_to "Need an account?", new_sign_up_path

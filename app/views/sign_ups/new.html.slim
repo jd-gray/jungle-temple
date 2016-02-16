@@ -1,0 +1,34 @@
+.jumbotron
+  .row
+    .col-md-6
+      h1.title
+        'Jungle Temple
+        = fa_icon 'diamond'
+
+    .col-md-6
+      = render 'form'
+
+.row.text-center
+	.col-md-4
+		h2 
+			'Create User Account
+			br
+			br
+			= fa_icon 'user-plus', class: "fa-4x"
+	.col-md-4
+		h2
+			'Plot Your Course
+			br
+			br
+			= fa_icon 'map-marker', class: "fa-4x"
+	.col-md-4
+		h2
+			'Navigate Efficiently
+			br
+			br
+			= fa_icon 'location-arrow', class: "fa-4x"
+
+.row#copy-right
+	p.text-center = "Copyright #{Date.today.year} - Jared Gray"
+
+      
