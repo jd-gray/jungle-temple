@@ -2,6 +2,8 @@
   = render 'form'
   br
 
+.alert.bg-success.text-center Use the drawing tools to plot the best route :)
+
 #map
 
 .row
@@ -33,4 +35,4 @@
         = will_paginate @locations
 
 - content_for :google_map do
-  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAP']}&callback=initMap"
+  = javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{ENV['GOOGLE_MAP']}&libraries=drawing&callback=initMap"
